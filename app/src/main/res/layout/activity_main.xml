@@ -1,0 +1,41 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DCE3EB"
+    android:padding="16dp">
+
+    <!-- Логотип -->
+
+    <!-- Кнопка "Войти" -->
+
+    <ImageView
+        android:id="@+id/logoImageView"
+        android:layout_width="389dp"
+        android:layout_height="489dp"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/logo2" />
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logoImageView"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="#2196F3"
+        android:text="Войти"
+        android:textColor="#FFFFFF" />
+
+    <!-- Кнопка "Зарегистрироваться" -->
+    <Button
+        android:id="@+id/registerButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/loginButton"
+        android:layout_marginTop="15dp"
+        android:text="Зарегистрироваться"
+        android:backgroundTint="#2196F3"
+        android:textColor="#FFFFFF"
+        android:layout_marginHorizontal="40dp"/>
+
+</RelativeLayout>

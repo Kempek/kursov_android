@@ -1,0 +1,114 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#DCE3EB">
+
+
+    <EditText
+        android:id="@+id/editTextProductName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/edit_text"
+        android:hint="Название" />
+
+    <EditText
+        android:id="@+id/editTextProductDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/edit_text"
+        android:hint="Описание товара"
+        android:inputType="textMultiLine"
+        />
+
+    <EditText
+        android:id="@+id/editTextProductPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/edit_text"
+        android:hint="Цена товара"
+        android:inputType="numberDecimal"
+        />
+
+    <EditText
+        android:id="@+id/editTextProductImageUrl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/edit_text"
+        android:hint="Ссылка на изображение"
+        />
+
+    <Button
+        android:id="@+id/buttonAddProduct"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:backgroundTint="#2196F3"
+        android:text="Добавить товар" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewProducts"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:visibility="visible" />
+
+    <EditText
+        android:id="@+id/editTextEditProductId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/edit_text"
+        android:hint="Введите ID товара для редактирования"/>
+
+    <EditText
+        android:id="@+id/editTextEditProductName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/edit_text"
+        android:hint="Новое название" />
+
+    <EditText
+        android:id="@+id/editTextEditProductDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/edit_text"
+        android:hint="Новое описание товара"/>
+    <EditText
+        android:id="@+id/editTextEditProductPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/edit_text"
+        android:hint="Новая цена товара"/>
+    <EditText
+        android:id="@+id/editTextEditProductImageUrl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/edit_text"
+        android:hint="Новое фото товара"/>
+
+    <Button
+        android:id="@+id/buttonEditProduct"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:backgroundTint="#2196F3"
+        android:text="Редактировать товар" />
+
+    <EditText
+        android:id="@+id/editTextProductId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/edit_text"
+        android:hint="Введите ID товара" />
+
+    <Button
+        android:id="@+id/buttonDeleteProduct"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:backgroundTint="#2196F3"
+        android:text="Удалить товар" />
+
+
+</LinearLayout>
